@@ -1,0 +1,7 @@
+Clasifica la relación entre las dos normas (contradiction, entailment o neutral).
+Responde en JSON con las claves label, confidence y reason.
+
+Contexto: {contexto}
+
+Norma A: {norma_a}
+Norma B: {norma_b}

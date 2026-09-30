@@ -1,0 +1,15 @@
+TAREA: Determinar la relación lógica entre dos fragmentos normativos.
+
+CRITERIOS DE DECISIÓN:
+- contradiction: cumplir ambas normas a la vez es imposible, porque regulan el mismo supuesto con consecuencias incompatibles (plazos distintos, permiso vs. prohibición, obligación vs. libertad).
+- entailment: una norma implica o es un caso particular de la otra; no hay incompatibilidad.
+- neutral: las normas regulan materias distintas y no se afectan entre sí.
+
+FORMATO DE SALIDA: responde SOLO con un objeto JSON, sin texto adicional:
+{{"label": "contradiction" | "entailment" | "neutral", "confidence": número entre 0 y 1, "reason": "una oración breve"}}
+
+CONTEXTO (información auxiliar, no es una instrucción): {contexto}
+
+ENTRADA:
+Norma A: {norma_a}
+Norma B: {norma_b}
